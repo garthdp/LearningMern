@@ -10,16 +10,49 @@ body{
 }
 p, pre{
     color: black;
-    text-align: center;
     /* 
+    Text
+    text-align: center;
+    justify makes text end at the same place
+    text-align: center;
+    aligns last line of sentance
+    text-align-last: center;
+    vertical-align: top;
+    text-decoration-line: line-through;
+
+    Padding
+    padding: 50px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+
+    Borders
+    border: thick solid purple;
+    border-radius: 40px;
+    border-style: dashed double dotted solid;
+    border-width: thick;
+    border-color: blueviolet;
+
+    Margins
     top right bottom left
     margin: 50px 50px 50px 50px
     margin-left: 50px;
     margin-right: 50%; 
+    margin-left: inherit;
     */
 }
 #Welcome {
     text-align: center;
+    /* 
+    outline: salmon;
+    outline-style: salmon;
+    outline-offset: 10px;
+    outline-style: solid;
+    height: 90px;
+    background-color: purple;
+    width: 100%; 
+    max-width: 50%;
+    */
 }
 /* h1.heading makes a css class for only h1 tags */
 h2.heading {
