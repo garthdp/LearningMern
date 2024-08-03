@@ -107,6 +107,10 @@ h2.heading {
      /* display: none; - removes element from page */
  }
 
+div[class="test"] {
+    color: red;
+}
+
  th, td{
     /* height: 50px; */
     padding: 10px;
