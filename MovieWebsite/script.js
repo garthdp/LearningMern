@@ -6,7 +6,7 @@ const main = document.getElementById("section")
 const form = document.getElementById("form")
 const search = document.getElementById("query")
 
-function returnMovies(url){
+function returnReviews(url){
     fetch(url).then(res => res.json())
     .then(function(data) {
         console.log(data.results);
@@ -29,8 +29,9 @@ function returnMovies(url){
             
             const center = document.createElement('center');
     
-            title.innerHTML = `${element.title}`;
+            title.innerHTML = `<a href="movie.html?id=${element.id}&title=${element.title}">${element.title}</a>`;
             image.src = IMG_PATH + element.poster_path;
+
             center.appendChild(image)
             div_card.appendChild(center)
             div_card.appendChild(title)
@@ -49,9 +50,9 @@ form.addEventListener("submit", (e) => {
     const searchItem = search.value
 
     if (searchItem){
-        returnMovies(SEARCHAPI + searchItem)
+        returnReviews(SEARCHAPI + searchItem)
         search.value = ""
     }
 })
 
-returnMovies(APILINK)
+returnReviews(APILINK)
